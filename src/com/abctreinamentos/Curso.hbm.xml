@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Sep 3, 2019 2:02:26 AM by Hibernate Tools 5.2.11.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="cursojava" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.abctreinamentos.Curso" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="curso">
+        <id name="idcurso" type="int">
+            <column name="idcurso"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="nome" optimistic-lock="true" type="string" unique="false">
+            <column length="80" name="nome" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="valor" optimistic-lock="true" type="float" unique="false">
+            <column name="valor" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property generated="never" lazy="false" name="url" optimistic-lock="true" type="string" unique="false">
+            <column length="80" name="url" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
